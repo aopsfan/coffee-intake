@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Table } from 'reactstrap';
+import { Button Table } from 'reactstrap';
 
 class App extends Component {
   render() {
@@ -29,7 +29,6 @@ class App extends Component {
                 <Button color="danger">Machiato</Button>
               </th>
             </tr>
-          </thead>
           <tbody>
             <tr>
               <th scope="row">Count</th>
@@ -39,7 +38,7 @@ class App extends Component {
             </tr>
           </tbody>
         </Table>
-      </div>
+      </div>;
     );
   }
 }
