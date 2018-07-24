@@ -13,7 +13,7 @@ class App extends Component {
           <h1 className="App-title">Coffee Intake</h1>
         </header>
         <div className="button-container">
-          <h1>How many cups a day?</h1>
+          <h1>How many cups?</h1>
         </div>
         <Table>
           <thead>
