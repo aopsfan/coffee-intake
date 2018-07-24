@@ -5,28 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Table } from 'reactstrap';
 
 class App extends Component {
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      consumption: {
-        'Expresso': 0,
-        'Latte': 0,
-        'Machiato': 0,
-      }
-    }
-
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick(coffee, ev) {
-    let consumption = this.state.consumption
-    consumption[coffee] += 1
-    this.setState({
-      consumption
-    })
-  }
-
   render() {
     return (
       <div className="App">
@@ -42,22 +20,22 @@ class App extends Component {
             <tr>
               <th>#</th>
               <th>
-                <Button outline color="primary" onClick={(ev) => this.handleClick('Expresso', ev)}>Expresso</Button>
+                <Button outline color="primary">Expresso</Button>
               </th>
               <th>
-                <Button outline color="secondary" onClick={(ev) => this.handleClick('Latte',ev)}>Latte</Button>
+                <Button outline color="secondary">Latte</Button>
               </th>
               <th>
-                <Button color="danger" onClick={(ev) => this.handleClick('Machiato',ev)}>Machiato</Button>
+                <Button color="danger">Machiato</Button>
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">Count</th>
-              <td>{this.state.consumption['Expresso']}</td>
-              <td>{this.state.consumption['Latte']}</td>
-              <td>{this.state.consumption['Machiato']}</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
           </tbody>
         </Table>
