@@ -23,3 +23,5 @@ run the following to get started
 yarn start
 ```
 
+**Bonus Points**
+* Once you get the app up and running, there are 3 buttons for you to increment the number of cups Expresso, Latte, or Machiato that you drink daily. Change the UI so that you can both increment, and decrement the counter for each type of coffee that you drink.
